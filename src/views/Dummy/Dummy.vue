@@ -23,14 +23,8 @@
         <ul class="mt-15">
           <li><b>onPluginsReady</b>: Dispatches initial save of plugins in database.</li>
           <li><b>onPluginLoaded</b>: Dispatches update of plugin details in database (after load).</li>
-          <li><b>onPluginInstallRequest</b>: Handles installation of compatible plugins to App (Plug &amp; Play).</li>
-          <li><b>onPluginInstalled</b>: Dispatches initial save of manually installed plugin.</li>
           <li><b>onPluginActionRequest</b>: Dispatches/Commits/Gets using app Vuex store.</li>
           <li><b>onPluginActionResponse</b>: Dispatches App to Plugin communication (RESPONSE).</li>
-          <li><b>onBeforePluginInstall</b>: Dispatches pre-installation hook for plugins.</li>
-          <li><b>onPluginInstallError</b>: Dispatches error handler hook for plugins.</li>
-          <li><b>onBeforePluginInjected</b>: Dispatches pre-injection hook for plugins.</li>
-          <li><b>onPluginInjected</b>: Dispatches post-injection hook for plugins.</li>
         </ul>
       </div>
     </div>
