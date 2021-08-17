@@ -9,7 +9,7 @@
  */
 @import "../../theme.less";
 
-.yourdlt-plugin-ninjazzz-container {
+.yourdlt-plugin-dummy-container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -37,9 +37,18 @@
     grid-template-rows: 1rem 7rem;
     grid-row-gap: 0.3rem;
 
-    .history-wrapper {
+    .content-wrapper {
       height: 100%;
       flex: 1;
+      margin-left: 15px;
+
+      ul {
+        margin-left: 15px;
+
+        li {
+          margin-bottom: 5px;
+        }
+      }
     }
   }
 
@@ -60,4 +69,8 @@
       margin-bottom: .2rem;
     }
   }
+}
+
+.mt-15 {
+  margin-top: 15px;
 }

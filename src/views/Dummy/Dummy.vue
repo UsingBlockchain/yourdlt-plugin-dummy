@@ -15,8 +15,23 @@
       <div class="title">
         <span class="title_txt">Example plugin</span>
       </div>
-      <div class="history-wrapper">
-        <h2>This plugin serves as an example for the development of custom plugins.</h2>
+      <div class="content-wrapper">
+        <h2>This plugin is an example of custom plugins.</h2>
+        <p>Developers can use this plugin as a boilerplate repository and add functionalities as they deem fit.</p>
+        <p>Custom plugins communicate with the Wallet Software using a dual communication channel based on IPC.</p>
+        <h2 class="mt-15">IPC: Inter-Process Communication</h2>
+        <ul class="mt-15">
+          <li><b>onPluginsReady</b>: Dispatches initial save of plugins in database.</li>
+          <li><b>onPluginLoaded</b>: Dispatches update of plugin details in database (after load).</li>
+          <li><b>onPluginInstallRequest</b>: Handles installation of compatible plugins to App (Plug &amp; Play).</li>
+          <li><b>onPluginInstalled</b>: Dispatches initial save of manually installed plugin.</li>
+          <li><b>onPluginActionRequest</b>: Dispatches/Commits/Gets using app Vuex store.</li>
+          <li><b>onPluginActionResponse</b>: Dispatches App to Plugin communication (RESPONSE).</li>
+          <li><b>onBeforePluginInstall</b>: Dispatches pre-installation hook for plugins.</li>
+          <li><b>onPluginInstallError</b>: Dispatches error handler hook for plugins.</li>
+          <li><b>onBeforePluginInjected</b>: Dispatches pre-injection hook for plugins.</li>
+          <li><b>onPluginInjected</b>: Dispatches post-injection hook for plugins.</li>
+        </ul>
       </div>
     </div>
     <div class="dashboard-right-container">
@@ -24,6 +39,7 @@
         <span class="title_txt">Plugin details</span>
       </div>
       <p>This software serves as an example custom plugin that can be installed in YourDLT / dHealth / Symbol Wallets.</p>
+      <p>Plugins enable Plug &amp; Play dApps, which partners &amp; community can build to add functionality inside the wallet and distribute it using common javascript module deployments (NPM).</p>
       <a
         class="github-fork-ribbon right-bottom"
         :href="forkUrl"
