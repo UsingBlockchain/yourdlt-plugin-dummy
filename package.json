@@ -2,7 +2,7 @@
   "name": "@yourdlt/plugin-dummy",
   "description": "Example Plugin for YourDLT / dHealth / Symbol Wallets",
   "homepage": "https://github.com/UsingBlockchain/yourdlt-plugin-dummy#readme",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "author": {
     "name": "Using Blockchain Ltd",
     "email": "info@ubc.digital",
@@ -26,13 +26,13 @@
   "scripts": {
     "serve": "vue-cli-service serve src/Dummy.ts",
     "build": "npm run build:lib && npm run build:ts && npm run copy:vue",
-    "build:lib": "vue-cli-service build --target lib --name YourDLTWalletPluginDummy src/Dummy.ts --mode production",
+    "build:lib": "vue-cli-service build --target lib --name YourDLTWalletPluginDummy src/Dummy.ts --mode production --inline-vue --formats commonjs",
     "build:ts": "tsc --emitDeclarationOnly",
     "copy:vue": "cpy '**/*.vue' '../dist/' --cwd=src --parents"
   },
   "dependencies": {
-    "@dhealth/wallet-api-bridge": "latest",
-    "@dhealth/wallet-components": "latest",
+    "@dhealth/wallet-api-bridge": "^1.3.0",
+    "@dhealth/wallet-components": "^1.3.0",
     "vue": "^2.6.10",
     "vue-property-decorator": "^8.1.0"
   },
