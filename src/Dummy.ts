@@ -45,9 +45,8 @@ export default {
         title: "Example Home",
         hideFromMenu: true,
       },
-      // @ts-ignore
-      component: () => import("@/views/Dummy/Dummy.vue"),
       props: false,
+      // no-component
     },
   ],
 
