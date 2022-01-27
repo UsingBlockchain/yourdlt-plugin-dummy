@@ -2,7 +2,7 @@
   "name": "@yourdlt/plugin-dummy",
   "description": "Example Plugin for YourDLT / dHealth / Symbol Wallets",
   "homepage": "https://github.com/UsingBlockchain/yourdlt-plugin-dummy#readme",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "author": {
     "name": "Using Blockchain Ltd",
     "email": "info@ubc.digital",

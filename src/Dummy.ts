@@ -34,6 +34,8 @@ export const registerComponents = (): { [s: string]: VueConstructor } => {
  * @license LGPL-3.0
  */
 export default {
+  friendlyName: "dHealth Example Plugin",
+
   view: "Dummy",
 
   routes: [
